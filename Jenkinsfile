@@ -3,13 +3,13 @@ pipeline{
   stages{
     stage("Fetch"){
       steps{
-        sh 'git fetch'
+        'git fetch'
       }
     }
     stage("Build"){
       steps{
-        sh 'cd "SpringBootDemoApp"'
-        sh 'mvn clean install'
+        'cd "SpringBootDemoApp"'
+        'mvn clean install'
       }
     }
   }
