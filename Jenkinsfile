@@ -11,5 +11,6 @@ pipeline{
         sh 'cd "SpringBootDemoApp"'
         sh 'mvn clean install'
       }
+    }
   }
 }
