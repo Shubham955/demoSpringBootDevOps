@@ -8,8 +8,9 @@ pipeline{
     }
     stage("Build"){
       steps{
-        bat 'cd "SpringBootDemoApp"'
-        bat 'mvn clean install'
+        dir("SpringBootDemoApp"){
+          bat 'mvn clean install'
+        }
       }
     }
   }
